@@ -1,5 +1,6 @@
 package com.ghn.cocknovel.viewmodel
 
+import android.R
 import android.app.Application
 import android.util.Log
 import androidx.databinding.ObservableField
@@ -40,6 +41,12 @@ open class BookStoreViewModel(application: Application) : BaseViewModel(applicat
     companion object {
         val TAG: String? = BookStoreViewModel::class.simpleName
         val mLogin = MutableLiveData<LoginBean>()
+    }
+    val viewmodevalue = MutableLiveData<String>()
+
+
+    fun getViewmodelValue(){
+        viewmodevalue.value="mainactivity的数据共享fragment"
     }
 
     init {

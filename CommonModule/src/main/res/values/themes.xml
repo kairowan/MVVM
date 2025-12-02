@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--  ========== 应用主题（浅色） ==========  -->
+    <style name="AppTheme" parent="Theme.Material3.Light.NoActionBar">
+        <!--  品牌/主色  -->
+        <item name="colorPrimary">@color/brand_blue_500</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/brand_blue_500_10</item>
+        <item name="colorOnPrimaryContainer">@color/brand_blue_600</item>
+        <item name="colorSecondary">@color/emerald_500</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSecondaryContainer">@color/emerald_500_10</item>
+        <item name="colorOnSecondaryContainer">@color/emerald_700</item>
+        <item name="colorTertiary">@color/brand_orange_500</item>
+        <item name="colorOnTertiary">@color/white</item>
+        <item name="colorTertiaryContainer">@color/brand_orange_500_10</item>
+        <item name="colorOnTertiaryContainer">@color/brand_orange_600</item>
+        <!--  状态色  -->
+        <item name="colorError">@color/rose_500</item>
+        <item name="colorOnError">@color/white</item>
+        <item name="colorErrorContainer">@color/rose_500_10</item>
+        <item name="colorOnErrorContainer">@color/rose_700</item>
+        <!--  表面/背景/描边  -->
+        <item name="android:colorBackground">@color/gray_50</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/gray_900</item>
+        <item name="colorSurfaceVariant">@color/gray_100</item>
+        <item name="colorOnSurfaceVariant">@color/gray_700</item>
+        <item name="colorOutline">@color/gray_300</item>
+        <item name="colorOutlineVariant">@color/gray_200</item>
+        <!--  系统栏  -->
+        <item name="android:statusBarColor" tools:targetApi="21">@color/brand_blue_600</item>
+        <item name="android:navigationBarColor" tools:targetApi="21">@color/white</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+        <!--  文本默认颜色（平台属性）  -->
+        <item name="android:textColorPrimary">@color/gray_900</item>
+        <item name="android:textColorSecondary">@color/gray_600</item>
+        <item name="android:textColorHint">@color/gray_400</item>
+        <!--  组件默认样式映射  -->
+        <item name="toolbarStyle">@style/Widget.App.Toolbar</item>
+        <item name="materialButtonStyle">@style/Widget.App.Button.Filled</item>
+        <item name="materialButtonOutlinedStyle">@style/Widget.App.Button.Outlined</item>
+        <item name="textInputStyle">@style/Widget.App.TextInputLayout</item>
+        <item name="chipStyle">@style/Widget.App.Chip</item>
+        <item name="cardViewStyle">@style/Widget.App.CardView</item>
+        <item name="switchStyle">@style/Widget.App.Switch</item>
+        <item name="snackbarStyle">@style/Widget.App.Snackbar</item>
+        <!--  字体（可按需替换为自定义字体族）  -->
+        <item name="android:fontFamily" tools:targetApi="16">sans-serif</item>
+        <!--  形状半径  -->
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.Small</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.App.Medium</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.App.Large</item>
+    </style>
+    <!--  ========== 组件样式 ==========  -->
+    <!--  Toolbar  -->
+    <style name="Widget.App.Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@color/white</item>
+        <item name="titleTextColor">@color/gray_900</item>
+        <item name="subtitleTextColor">@color/gray_600</item>
+        <item name="navigationIconTint">@color/gray_900</item>
+    </style>
+    <!--  Button - Filled  -->
+    <style name="Widget.App.Button.Filled" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/brand_blue_500</item>
+        <item name="rippleColor">@color/brand_blue_500_20</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+    <!--  Button - Outlined  -->
+    <style name="Widget.App.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="strokeColor">@color/gray_300</item>
+        <item name="android:textColor">@color/brand_blue_600</item>
+        <item name="rippleColor">@color/brand_blue_500_10</item>
+    </style>
+    <!--  Button - Elevated  -->
+    <style name="Widget.App.Button.Elevated" parent="Widget.Material3.Button.ElevatedButton">
+        <item name="backgroundTint">@color/white</item>
+        <item name="android:textColor">@color/brand_blue_600</item>
+        <item name="rippleColor">@color/brand_blue_500_10</item>
+    </style>
+    <!--  TextInputLayout  -->
+    <style name="Widget.App.TextInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">@color/white</item>
+        <item name="boxStrokeColor">@color/gray_300</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">2dp</item>
+        <item name="hintTextColor">@color/gray_500</item>
+        <item name="android:textColorHint">@color/gray_500</item>
+        <item name="counterTextColor">@color/gray_500</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.App.Medium</item>
+    </style>
+    <!--  Chip  -->
+    <style name="Widget.App.Chip" parent="Widget.Material3.Chip.Assist">
+        <item name="chipBackgroundColor">@color/gray_100</item>
+        <item name="chipStrokeColor">@color/gray_300</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="android:textColor">@color/gray_900</item>
+        <item name="rippleColor">@color/gray_900_10</item>
+    </style>
+    <!--  CardView  -->
+    <style name="Widget.App.CardView" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardBackgroundColor">@color/white</item>
+        <item name="strokeColor">@color/gray_200</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.App.Large</item>
+    </style>
+    <!--  Switch  -->
+    <style name="Widget.App.Switch" parent="Widget.Material3.CompoundButton.Switch">
+        <item name="thumbTint">@color/brand_blue_500</item>
+        <item name="trackTint">@color/brand_blue_500_30</item>
+    </style>
+    <!--  Snackbar  -->
+    <style name="Widget.App.Snackbar" parent="Widget.Material3.Snackbar">
+        <item name="backgroundTint">@color/gray_900</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <!--  形状：圆角规模  -->
+    <style name="ShapeAppearance.App.Small" parent="ShapeAppearance.Material3.Corner.Small" />
+
+    <style name="ShapeAppearance.App.Medium" parent="ShapeAppearance.Material3.Corner.Medium" />
+
+    <style name="ShapeAppearance.App.Large" parent="ShapeAppearance.Material3.Corner.Large" />
+    <!--  文本外观（可按需扩展）  -->
+    <style name="TextAppearance.App.TitleLarge" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textColor">@color/gray_900</item>
+    </style>
+
+    <style name="TextAppearance.App.Body" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textColor">@color/gray_800</item>
+    </style>
+
+    <style name="TextAppearance.App.Label" parent="TextAppearance.Material3.LabelLarge">
+        <item name="android:textColor">@color/gray_600</item>
+    </style>
+</resources>

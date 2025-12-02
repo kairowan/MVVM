@@ -5,12 +5,16 @@
             name="mode"
             type="com.ghn.cocknovel.viewmodel.RecommendViewModel" />
     </data>
-    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".ui.fragment.BookshelfFragment">
-
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/TvBookText"
+            />
 <!--        <androidx.recyclerview.widget.RecyclerView-->
 <!--            android:id="@+id/RecommRecyclerview"-->
 <!--            android:layout_width="match_parent"-->
@@ -18,5 +22,5 @@
 <!--            tools:listitem="@layout/item_home"-->
 <!--            android:accessibilityHeading="@bool/tbrest_test"-->
 <!--            />-->
-    </FrameLayout>
+    </LinearLayout>
 </layout>

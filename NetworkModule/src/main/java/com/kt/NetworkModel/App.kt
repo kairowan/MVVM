@@ -94,6 +94,6 @@ open class App : MultiDexApplication() {
 
         fun get(): App = instance
         fun context(): Context = instance.applicationContext
-
+        
     }
 }

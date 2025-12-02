@@ -50,6 +50,7 @@ xbanner="androidx_v1.2.6"
 hilt = "2.37"
 liangjingkanji-brv="1.6.1"
 easywindow="10.6"
+activity = "1.8.0"
 
 
 
@@ -105,6 +106,7 @@ dagger-hilt-android={ group = "com.google.dagger", name = "hilt-android", versio
 dagger-hilt-android-compiler={ group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt" }
 github-lqdbrv={group = "com.github.liangjingkanji",name="BRV",version.ref="liangjingkanji-brv"}
 github-easywindow = { module = "com.github.getActivity:EasyWindow", version.ref = "easywindow" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

@@ -34,8 +34,8 @@ class BookshelfFragment() : BaseFragment<FragmentBookshelfBinding, RecommendView
     }
 
     override fun initViewObservable() {
-
-//        val RecommList = mutableListOf<datas>()
+        mViewModel.getBanner()
+//        val RecommList =   mutableListOf<datas>()
 //        viewModel?.getwan()
 //        RecommRecyclerview.layoutManager = LinearLayoutManager(activity)
 //        adapter = object : BaseRecyclerAdapter<datas>(RecommList) {
